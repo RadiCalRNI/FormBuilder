@@ -1,0 +1,8 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.v-toast__text {
+  font-family: 'Estedad-FD-Light', Tahoma, Sans-Serif !important;
+}
