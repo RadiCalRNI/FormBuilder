@@ -171,6 +171,7 @@ const elements = ref<IElements>({
       heading: 'اسلایدر بازه‌ای',
       description: 'اسلایدر افقی با بازه مشخص',
       type: 'rangeSlider',
+      label: 'اسلایدر بازه ای',
       step: 10,
       min: 50,
       max: 100,

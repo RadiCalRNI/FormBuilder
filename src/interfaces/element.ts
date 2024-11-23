@@ -40,6 +40,7 @@ export interface IElementRangeSlider {
   icon: string,
   heading: string,
   description: string,
+   label?: string,
   type: string,
   step: number,
   min: number,

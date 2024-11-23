@@ -13,12 +13,16 @@ watch(
     if (selectedElement.value.min > selectedElement.value.value) {
       selectedElement.value.value = selectedElement.value.min
     }
-  }
+  },
 )
 </script>
 
 <template>
   <div class="detail-number">
+    <div class="label-text">
+      <label for="">عنوان</label>
+      <input v-model="selectedElement.label" type="text" />
+    </div>
     <div class="value-text">
       <label for="">مقدار</label>
       <input

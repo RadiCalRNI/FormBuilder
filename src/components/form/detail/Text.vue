@@ -7,18 +7,13 @@ const store = useStore()
 // Create a computed property for reactivity
 const selectedElement = computed(() => store.getters.getSelectedElement)
 
-const labelChange = (event: Event) => {
-  //   if (!(event.target as HTMLInputElement).value) {
-  //     selectedElement.value.label = "Text input"
-  //   }
-}
 </script>
 
 <template>
   <div class="detail-text">
     <div class="label-text">
       <label for="">عنوان</label>
-      <input v-model="selectedElement.label" type="text" @input="labelChange" />
+      <input v-model="selectedElement.label" type="text"  />
     </div>
     <div class="placeholder-text">
       <label for="">متن راهنما</label>
