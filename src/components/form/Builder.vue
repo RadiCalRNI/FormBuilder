@@ -151,7 +151,17 @@ const checkError = () => {
     }
 
     if (element.type === 'number' && element.required && element.value === '') {
-      toast.error("المان 'عدد' صحیح نمی باشد")
+      toast.error("مقدار المان 'عدد' صحیح نمی باشد")
+      return false
+    }
+
+    if (element.type === 'number' && element.value < element.min) {
+      toast.error(`مقدار المان 'عدد' نمی تواند کمتر از ${element.min} باشد`)
+      return false
+    }
+
+    if (element.type === 'number' && element.value > element.max) {
+      toast.error(`مقدار المان 'عدد' نمی تواند بیشتر از ${element.max} باشد`)
       return false
     }
 
